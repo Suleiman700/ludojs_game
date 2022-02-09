@@ -1,0 +1,515 @@
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: black;
+}
+.ludo {
+    display: grid;
+    grid-template-columns: repeat(15, 40px);
+    grid-template-rows: repeat(15, 40px);
+    grid-gap: 2px;
+}
+.Cuadro-red,
+.Cuadro-blue,
+.Cuadro-yellow,
+.Cuadro-green {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 3px;
+}
+
+.Cuadro-red {
+    border-radius: 25px 0 0 0;
+}
+.Cuadro-yellow {
+    border-radius: 0 25px 0 0;
+}
+.Cuadro-green {
+    border-radius: 0 0 25px 0;
+}
+.Cuadro-blue {
+    border-radius: 0 0 0 25px;
+}
+.cuadrado-t-r,
+.cuadrado-t-y,
+.cuadrado-t-g,
+.cuadrado-t-b {
+    background: var(--color-main);
+    grid-row: 2/6;
+    grid-column: 2/6;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.circulo1,
+.circulo2,
+.circulo3,
+.circulo4 {
+    border-radius: 50%;
+    background: #c6c6c6;
+}
+.circulo1 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.circulo2 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.circulo3 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.circulo4 {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+.Cuadro-red {
+    grid-column: 1/7;
+    grid-row: 1/7;
+    background: var(--color-l);
+}
+.Cuadro-yellow {
+    grid-column: 10/16;
+    grid-row: 1/7;
+    background: var(--color-t);
+}
+.Cuadro-blue {
+    grid-column: 1/7;
+    grid-row: 10/16;
+    background: var(--color-b);
+}
+.Cuadro-green {
+    grid-column: 10/16;
+    grid-row: 10/16;
+    background: var(--color-r);
+}
+.cuadrado-t {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.cuadro-medio {
+    grid-column: 7/10;
+    grid-row: 7/10;
+    height: 0;
+    width: 0;
+    border-top: 62px solid var(--color-t);
+    border-left: 62px solid var(--color-l);
+    border-bottom: 62px solid var(--color-b);
+    border-right: 62px solid var(--color-r);
+}
+/*-------YELLOW-TOP-------*/
+.cuadradost1,
+.cuadradost2,
+.cuadradost4,
+.cuadradost5,
+.cuadradost6 {
+    background: var(--color-main);
+    grid-column: var(--grid-1);
+}
+.cuadradost1 {
+    grid-row: 1/2;
+}
+.cuadradost2 {
+    grid-row: 2/3;
+}
+.cuadradost3 {
+    background: gray;
+    grid-row: 3/4;
+}
+.cuadradost4 {
+    grid-row: 4/5;
+}
+.cuadradost5 {
+    grid-row: 5/6;
+}
+.cuadradost6 {
+    grid-row: 6/7;
+}
+.cuadradost7,
+.cuadradost8,
+.cuadradost9,
+.cuadradost10,
+.cuadradost11,
+.cuadradost12 {
+    background: var(--color-t);
+    grid-column: var(--grid-2);
+}
+.cuadradost7 {
+    grid-row: 1/2;
+}
+.cuadradost8 {
+    grid-row: 2/3;
+}
+.cuadradost9 {
+    grid-row: 3/4;
+}
+.cuadradost10 {
+    grid-row: 4/5;
+}
+.cuadradost11 {
+    grid-row: 5/6;
+}
+.cuadradost12 {
+    grid-row: 6/7;
+}
+.cuadradost13,
+.cuadradost14,
+.cuadradost15,
+.cuadradost16,
+.cuadradost17,
+.cuadradost18 {
+    background: var(--color-main);
+    grid-column: var(--grid-3);
+}
+.cuadradost13 {
+    grid-row: 1/2;
+}
+.cuadradost14 {
+    background: var(--color-t);
+    grid-row: 2/3;
+}
+.cuadradost15 {
+    grid-row: 3/4;
+}
+.cuadradost16 {
+    grid-row: 4/5;
+}
+.cuadradost17 {
+    grid-row: 5/6;
+}
+.cuadradost18 {
+    grid-row: 6/7;
+}
+/*Cuadrados - verdes*/
+.cuadradosr1,
+.cuadradosr2,
+.cuadradosr3,
+.cuadradosr4,
+.cuadradosr5,
+.cuadradosr6 {
+    background: var(--color-main);
+    grid-row: var(--grid-1);
+}
+.cuadradosr1 {
+    grid-column: 10/11;
+}
+.cuadradosr2 {
+    grid-column: 11/12;
+}
+.cuadradosr3 {
+    grid-column: 12/13;
+}
+.cuadradosr4 {
+    background: gray;
+    grid-column: 13/14;
+}
+.cuadradosr5 {
+    grid-column: 14/15;
+}
+.cuadradosr6 {
+    grid-column: 15/16;
+}
+.cuadradosr7,
+.cuadradosr8,
+.cuadradosr9,
+.cuadradosr10,
+.cuadradosr11,
+.cuadradosr12 {
+    background: var(--color-r);
+    grid-row: var(--grid-2);
+}
+.cuadradosr7 {
+    grid-column: 10/11;
+}
+.cuadradosr8 {
+    grid-column: 11/12;
+}
+.cuadradosr9 {
+    grid-column: 12/13;
+}
+.cuadradosr10 {
+    grid-column: 13/14;
+}
+.cuadradosr11 {
+    grid-column: 14/15;
+}
+.cuadradosr12 {
+    grid-column: 15/16;
+}
+.cuadradosr13,
+.cuadradosr14,
+.cuadradosr15,
+.cuadradosr16,
+.cuadradosr17,
+.cuadradosr18 {
+    background: var(--color-main);
+    grid-row: var(--grid-3);
+}
+.cuadradosr13 {
+    grid-column: 10/11;
+}
+.cuadradosr14 {
+    grid-column: 11/12;
+}
+.cuadradosr15 {
+    grid-column: 12/13;
+}
+.cuadradosr16 {
+    grid-column: 13/14;
+}
+.cuadradosr17 {
+    grid-column: 14/15;
+    background: var(--color-r);
+}
+.cuadradosr18 {
+    grid-column: 15/16;
+}
+/*--------RED-L-----------*/
+.cuadradosl1,
+.cuadradosl3,
+.cuadradosl4,
+.cuadradosl5,
+.cuadradosl6 {
+    background: var(--color-main);
+    grid-row: var(--grid-1);
+}
+.cuadradosl1 {
+    grid-column: 1/2;
+}
+.cuadradosl2 {
+    background: var(--color-l);
+    grid-column: 2/3;
+}
+.cuadradosl3 {
+    grid-column: 3/4;
+}
+.cuadradosl4 {
+    grid-column: 4/5;
+}
+.cuadradosl5 {
+    grid-column: 5/6;
+}
+.cuadradosl6 {
+    grid-column: 6/7;
+}
+.cuadradosl8,
+.cuadradosl9,
+.cuadradosl10,
+.cuadradosl11,
+.cuadradosl12 {
+    background: var(--color-l);
+    grid-row: var(--grid-2);
+}
+.cuadradosl7 {
+    grid-column: 1/2;
+}
+.cuadradosl8 {
+    grid-column: 2/3;
+}
+.cuadradosl9 {
+    grid-column: 3/4;
+}
+.cuadradosl10 {
+    grid-column: 4/5;
+}
+.cuadradosl11 {
+    grid-column: 5/6;
+}
+.cuadradosl12 {
+    grid-column: 6/7;
+}
+.cuadradosl13,
+.cuadradosl14,
+.cuadradosl16,
+.cuadradosl17,
+.cuadradosl18 {
+    background: var(--color-main);
+    grid-row: var(--grid-3);
+}
+.cuadradosl13 {
+    grid-column: 1/2;
+}
+.cuadradosl14 {
+    grid-column: 2/3;
+}
+.cuadradosl15 {
+    background: gray;
+    grid-column: 3/4;
+}
+.cuadradosl16 {
+    grid-column: 4/5;
+}
+.cuadradosl17 {
+    grid-column: 5/6;
+}
+.cuadradosl18 {
+    grid-column: 6/7;
+}
+/*-------BLUE-B-------*/
+.cuadradosb1,
+.cuadradosb2,
+.cuadradosb3,
+.cuadradosb4,
+.cuadradosb6 {
+    background: var(--color-main);
+    grid-column: var(--grid-1);
+}
+.cuadradosb1 {
+    grid-row: 10/11;
+}
+.cuadradosb2 {
+    grid-row: 11/12;
+}
+.cuadradosb3 {
+    grid-row: 12/13;
+}
+.cuadradosb4 {
+    grid-row: 13/14;
+}
+.cuadradosb5 {
+    background: var(--color-b);
+    grid-row: 14/15;
+}
+.cuadradosb6 {
+    grid-row: 15/16;
+}
+.cuadradosb7,
+.cuadradosb8,
+.cuadradosb9,
+.cuadradosb10,
+.cuadradosb11,
+.cuadradosb12 {
+    background: var(--color-b);
+    grid-column: var(--grid-2);
+}
+.cuadradosb7 {
+    grid-row: 10/11;
+}
+.cuadradosb8 {
+    grid-row: 11/12;
+}
+.cuadradosb9 {
+    grid-row: 12/13;
+}
+.cuadradosb10 {
+    grid-row: 13/14;
+}
+.cuadradosb11 {
+    grid-row: 14/15;
+}
+.cuadradosb12 {
+    grid-row: 15/16;
+}
+.cuadradosb13,
+.cuadradosb14,
+.cuadradosb15,
+.cuadradosb17,
+.cuadradosb18 {
+    background: var(--color-main);
+    grid-column: var(--grid-3);
+}
+.cuadradosb13 {
+    grid-row: 10/11;
+}
+.cuadradosb14 {
+    grid-row: 11/12;
+}
+.cuadradosb15 {
+    grid-row: 12/13;
+}
+.cuadradosb16 {
+    background: gray;
+    grid-row: 13/14;
+}
+.cuadradosb17 {
+    grid-row: 14/15;
+}
+.cuadradosb18 {
+    grid-row: 15/16;
+}
+/*Estrellas*/
+
+.far,
+.fas {
+    color: white;
+    font-size: 1.8rem;
+}
+.cuadradosb16 .far,
+.cuadradosl15 .far,
+.cuadradost3 .far,
+.cuadradosr4 .far {
+    font-weight: bold;
+}
+/*Flechas de Ingreso*/
+.cuadradosr12,
+.cuadradosl7,
+.cuadradost7,
+.cuadradosb12 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+/*Estrellas-plomas*/
+.cuadradosr4,
+.cuadradost3,
+.cuadradosb16,
+.cuadradosl15,
+.cuadradosb5,
+.cuadradost14,
+.cuadradosr17,
+.cuadradosl2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadradosl7,
+.cuadradost7,
+.cuadradosr12,
+.cuadradosb12 {
+    background: var(--color-main);
+}
+.cuadradosl7 .fas {
+    color: var(--color-l);
+}
+.cuadradost7 .fas {
+    color: var(--color-t);
+}
+.cuadradosr12 .fas {
+    color: var(--color-r);
+}
+.cuadradosb12 .fas {
+    color: var(--color-b);
+}
+
+/*variables*/
+:root {
+    --grid-1: 7/8;
+    --grid-2: 8/9;
+    --grid-3: 9/10;
+    --color-main: white;
+    --color-r: #239746;
+    --color-t: #f6c500;
+    --color-b: #2073b5;
+    --color-l: #d43230;
+}
+
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* icons onboard like chevron arrows and stars need to be behind markers */
+.fas, .far {
+    position: absolute;
+    z-index: 10
+}
+
+.dot {
+    z-index: 11
+}

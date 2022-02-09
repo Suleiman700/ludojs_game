@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/players_markers.css">
+    <link rel="stylesheet" href="assets/css/dice.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="stylesheet" href="assets/css/glowing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<script src="https://kit.fontawesome.com/eb3d4e59bc.js" crossorigin="anonymous"></script>
+<div class="container d-flex justify-content-md-center align-items-center mt-5">
+    <div class="ludo">
+        <div class="Cuadro-yellow" id="base_player1">
+            <div class="cuadrado-t-y">
+                <div class="circulo1 y" id="base_player1_pos1"></div>
+                <div class="circulo2 y" id="base_player1_pos2"></div>
+                <div class="circulo3 y" id="base_player1_pos3"></div>
+                <div class="circulo4 y" id="base_player1_pos4"></div>
+            </div>
+        </div>
+        <div class="cuadradost1" id="cell_24"></div>
+        <div class="cuadradost2" id="cell_23"></div>
+        <div class="cuadradost3" id="cell_22">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradost4" id="cell_21"></div>
+        <div class="cuadradost5" id="cell_20"></div>
+        <div class="cuadradost6" id="cell_19"></div>
+        <div class="cuadradost7" id="cell_25">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="cuadradost8" id="cell_63"></div>
+        <div class="cuadradost9" id="cell_64"></div>
+        <div class="cuadradost10" id="cell_65"></div>
+        <div class="cuadradost11" id="cell_66"></div>
+        <div class="cuadradost12" id="cell_67"></div>
+        <div class="cuadradost13" id="cell_26"></div>
+        <div class="cuadradost14" id="cell_27">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradost15" id="cell_28"></div>
+        <div class="cuadradost16" id="cell_29"></div>
+        <div class="cuadradost17" id="cell_30"></div>
+        <div class="cuadradost18" id="cell_31"></div>
+
+        <div class="Cuadro-red" id="base_player2">
+            <div class="cuadrado-t-r">
+                <div class="circulo1 r" id="base_player2_pos1"></div>
+                <div class="circulo2 r" id="base_player2_pos2"></div>
+                <div class="circulo3 r" id="base_player2_pos3"></div>
+                <div class="circulo4 r" id="base_player2_pos4"></div>
+            </div>
+        </div>
+        <div class="cuadradosl1" id="cell_13"></div>
+        <div class="cuadradosl2" id="cell_14">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradosl3" id="cell_15"></div>
+        <div class="cuadradosl4" id="cell_16"></div>
+        <div class="cuadradosl5" id="cell_17"></div>
+        <div class="cuadradosl6" id="cell_18"></div>
+        <div class="cuadradosl7" id="cell_12">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="cuadradosl8" id="cell_58">58</div>
+        <div class="cuadradosl9" id="cell_59">59</div>
+        <div class="cuadradosl10" id="cell_60">60</div>
+        <div class="cuadradosl11" id="cell_61">61</div>
+        <div class="cuadradosl12" id="cell_62">62</div>
+        <div class="cuadradosl13" id="cell_11"></div>
+        <div class="cuadradosl14" id="cell_10"></div>
+        <div class="cuadradosl15" id="cell_9">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradosl16" id="cell_8"></div>
+        <div class="cuadradosl17" id="cell_7"></div>
+        <div class="cuadradosl18" id="cell_6"></div>
+
+        <div class="Cuadro-blue" id="base_player0">
+            <div class="cuadrado-t-b">
+                <div class="circulo1 b" id="base_player0_pos1"></div>
+                <div class="circulo2 b" id="base_player0_pos2"></div>
+                <div class="circulo3 b" id="base_player0_pos3"></div>
+                <div class="circulo4 b" id="base_player0_pos4"></div>
+            </div>
+        </div>
+        <div class="cuadradosb1" id="cell_5"></div>
+        <div class="cuadradosb2" id="cell_4"></div>
+        <div class="cuadradosb3" id="cell_3"></div>
+        <div class="cuadradosb4" id="cell_2"></div>
+        <div class="cuadradosb5" id="cell_1">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradosb6" id="cell_52"></div>
+        <div class="cuadradosb7" id="cell_57">57</div>
+        <div class="cuadradosb8" id="cell_56">56</div>
+        <div class="cuadradosb9" id="cell_55">55</div>
+        <div class="cuadradosb10" id="cell_54">54</div>
+        <div class="cuadradosb11" id="cell_53">53</div>
+        <div class="cuadradosb12" id="cell_51">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="cuadradosb13" id="cell_45"></div>
+        <div class="cuadradosb14" id="cell_46"></div>
+        <div class="cuadradosb15" id="cell_47"></div>
+        <div class="cuadradosb16" id="cell_48">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradosb17" id="cell_49"></div>
+        <div class="cuadradosb18" id="cell_50"></div>
+
+        <div class="Cuadro-green" id="base_player3">
+            <div class="cuadrado-t-g">
+                <div class="circulo1 g" id="base_player3_pos1"></div>
+                <div class="circulo2 g" id="base_player3_pos2"></div>
+                <div class="circulo3 g" id="base_player3_pos3"></div>
+                <div class="circulo4 g" id="base_player3_pos4"></div>
+            </div>
+        </div>
+
+        <div class="cuadradosr1" id="cell_32"></div>
+        <div class="cuadradosr2" id="cell_33"></div>
+        <div class="cuadradosr3" id="cell_34"></div>
+        <div class="cuadradosr4" id="cell_35">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradosr5" id="cell_36"></div>
+        <div class="cuadradosr6" id="cell_37"></div>
+        <div class="cuadradosr7" id="cell_72">72</div>
+        <div class="cuadradosr8" id="cell_71">71</div>
+        <div class="cuadradosr9" id="cell_70">70</div>
+        <div class="cuadradosr10" id="cell_69">69</div>
+        <div class="cuadradosr11" id="cell_68">68</div>
+        <div class="cuadradosr12" id="cell_38">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="cuadradosr13" id="cell_44"></div>
+        <div class="cuadradosr14" id="cell_43"></div>
+        <div class="cuadradosr15" id="cell_42"></div>
+        <div class="cuadradosr16" id="cell_41"></div>
+        <div class="cuadradosr17" id="cell_40">
+            <i class="far fa-star"></i>
+        </div>
+        <div class="cuadradosr18" id="cell_39"></div>
+
+        <div class="cuadro-medio"></div>
+    </div>
+</div>
+
+
+<div class="modal" id="modal_welcome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Welcome</h5>
+            </div>
+            <div class="modal-body">
+                <p>Number of players:</p>
+                <select class="form-select" aria-label="Default select example" id="numOfPlayers">
+                    <option value="2" selected>Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onClick="selectPlayers(alert(1))">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="dice">
+    <p id="placeholder"></p>
+    <button id="rolldice">Roll Dice</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/base.js"></script>
+<script src="assets/js/ludo.js"></script>
+<script src="assets/js/dice.js"></script>
+<script src="assets/js/markers.js"></script>
+<script src="assets/js/cells.js"></script>
+<script>
+    // $("#modal_welcome").show('modal');
+</script>
+</body>
+</html>
