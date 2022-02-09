@@ -1,0 +1,31 @@
+.marker_player0 {
+    height: 100%;
+    width: 100%;
+    background-color: #2092b5;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.marker_player1 {
+    height: 100%;
+    width: 100%;
+    background-color: #e6f600;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.marker_player2 {
+    height: 100%;
+    width: 100%;
+    background-color: #d43230;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.marker_player3 {
+    height: 100%;
+    width: 100%;
+    background-color: #239746;
+    border-radius: 50%;
+    display: inline-block;
+}

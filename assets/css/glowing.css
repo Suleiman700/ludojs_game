@@ -1,0 +1,28 @@
+.glowing {
+    /*width: 200px;*/
+    /*height: 200px;*/
+    border-radius: 100px;
+    animation: glow .5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 3px -3px black;
+    }
+    to {
+        box-shadow: 0 0 3px 3px black;
+    }
+}
+
+
+.glowing-base {
+    animation: glow_base .5s infinite alternate;
+}
+@keyframes glow_base {
+    from {
+        box-shadow: 0 0 3px -3px black;
+    }
+    to {
+        box-shadow: 0 0 3px 3px black;
+    }
+}
