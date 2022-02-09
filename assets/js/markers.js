@@ -184,7 +184,7 @@ function moveMarker(elm) {
                 console.log(`player${turn}'s marker has reached the last white cell, entering goal path...`)
             }
 
-            else if (67)
+            // else if (67)
 
             // If reached the goal
             else if (numeric_next_cell > player_last_goal_cell) {
